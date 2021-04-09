@@ -12,4 +12,9 @@ describe("extractURL", () => {
     })
 })
 
-describe()
+describe("extractURL", () => {
+    it("extractURL('www.xakep.ru') => xakep", () => {
+        expect(extractURL('www.xakep.ru')).toEqual('xakep')
+    })
+})
+
