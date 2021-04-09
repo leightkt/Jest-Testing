@@ -18,3 +18,9 @@ describe("extractURL", () => {
     })
 })
 
+describe("extractURL", () => {
+    it("extractURL('https://youtube.com') => youtube", () => {
+        expect(extractURL('https://youtube.com')).toEqual('youtube')
+    })
+})
+
