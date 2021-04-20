@@ -15,10 +15,10 @@ function romanNumeral(roman) {
         "M": '1000,'
     }
     const reg = new RegExp(Object.keys(replaceOptions).join("|"),"g");
-    const reducer = (accum, value) => accum + value
+    // const reducer = (accum, value) => accum + value
     return roman.replace(reg, function(matched) {
         return replaceOptions[matched]
-    }).split(',').map(num => parseInt(num)).filter(num => !isNaN(num)).reduce(reducer)
+    }).split(',').map(num => parseInt(num)).filter(num => !isNaN(num)).reduce((a,b) => a + b)
 }
 
 
