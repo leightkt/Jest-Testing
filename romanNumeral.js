@@ -14,7 +14,7 @@ function romanNumeral(roman) {
         "CM": '900,',
         "M": '1000,'
     }
-    const reg = new RegExp(Object.keys(replaceOptions).join("|"),"gi");
+    const reg = new RegExp(Object.keys(replaceOptions).join("|"),"g");
     const reducer = (accum, value) => accum + value
     return roman.replace(reg, function(matched) {
         return replaceOptions[matched]

@@ -29,3 +29,9 @@ describe('romanNumeral', () => {
         expect(romanNumeral('IV')).toBe(4)
     })
 })
+
+describe('romanNumeral', () => {
+    it('romanNumeral(IX) => 9', () => {
+        expect(romanNumeral('IX')).toBe(9)
+    })
+})
