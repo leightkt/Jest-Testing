@@ -1,4 +1,4 @@
-const mumble = require('../mumble')
+const { mumble } = require('../mumble')
 
 describe('mumble', () => {
     it('mumble(ZpglnRxqenU) => Z-Pp-Ggg-Llll-Nnnnn-Rrrrrr-Xxxxxxx-Qqqqqqqq-Eeeeeeeee-Nnnnnnnnnn-Uuuuuuuuuuu', () => {
