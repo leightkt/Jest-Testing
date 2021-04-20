@@ -8,7 +8,7 @@ describe('romanNumeral', () => {
 
 describe('romanNumeral', () => {
     it('romanNumeral(MMVIII) => 2008', () => {
-        expect(romanNumeral('MVIII')).toBe(2008)
+        expect(romanNumeral('MMVIII')).toBe(2008)
     })
 })
 
@@ -19,7 +19,13 @@ describe('romanNumeral', () => {
 })
 
 describe('romanNumeral', () => {
-    it('romanNumeral(MDCLXVI => 1666', () => {
+    it('romanNumeral(MDCLXVI) => 1666', () => {
         expect(romanNumeral('MDCLXVI')).toBe(1666)
+    })
+})
+
+describe('romanNumeral', () => {
+    it('romanNumeral(IV) => 4', () => {
+        expect(romanNumeral('IV')).toBe(4)
     })
 })

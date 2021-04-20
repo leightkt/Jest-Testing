@@ -19,7 +19,6 @@ function romanNumeral(roman) {
     return roman.replace(reg, function(matched) {
         return replaceOptions[matched]
     }).split(',').map(num => parseInt(num)).filter(num => !isNaN(num)).reduce(reducer)
-    // .map(num => parseInt(num)).reduce(reducer)
 }
 
 
