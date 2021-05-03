@@ -11,3 +11,9 @@ describe("reverseString", () => {
         expect(reverseString('mellowonion')).toEqual("noinowollem")
     })
 })
+
+describe("reverseString", () => {
+    it("reverseString('happyhippie') => eippihyppah", () => {
+        expect(reverseString('happyhippie')).toEqual("eippihyppah")
+    })
+})
