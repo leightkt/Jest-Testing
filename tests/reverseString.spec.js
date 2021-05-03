@@ -5,3 +5,9 @@ describe("reverseString", () => {
         expect(reverseString('helloworld')).toEqual("dlrowolleh")
     })
 })
+
+describe("reverseString", () => {
+    it("reverseString('mellowonion') => noinowollem", () => {
+        expect(reverseString('mellowonion')).toEqual("noinowollem")
+    })
+})
